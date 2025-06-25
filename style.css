@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Anybody');
+
 body {
     text-align: center;
+    font-family: 'Anybody', sans-serif;
+    background-image: url('https://u.cubeupload.com/_cloudcoding_/vimalscPGMrfAuUSguns.jpg');
+    color: rgb(136, 173, 207);
 }
 
+h1 {
+    margin-top: 4rem;
+}
