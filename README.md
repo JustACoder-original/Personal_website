@@ -1,3 +1,1 @@
-A small WIP website for myself
 
-I know its bad but...
