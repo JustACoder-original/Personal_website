@@ -15,19 +15,15 @@
     </p>
     <script>
         const apiUrl = 'https://hackatime.hackclub.com/api/v1/users/U08SMP12N22/stats';
-        async function loopWithDelay() {  
-          while (true) {
-              fetch(apiUrl)
-                  .then(response => response.json())
-                  .then(data => {
-                      document.getElementById('hackatime').innerText = `I have ${data.data.human_readable_total} of coding under my belt`;
-                  })
-                  .catch(error => 
-                  console.error('Error:', error),
-                  document.getElementById('hackatime').innerText = `Error, please make an error card at https://github.com/JustACoder-original/Personal_website/issues with your browser information`);
-              await delay(600000)
-                }   
-        }
+
+        fetch(apiUrl)
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('hackatime').innerText = `I have ${data.data.human_readable_total} of coding under my belt`;
+          })
+          .catch(error => 
+            console.error('Error:', error),
+            document.getElementById('hackatime').innerText = `Error, please make an error card at https://github.com/JustACoder-original/Personal_website/issues with your browser information`);
     </script>
   </body>
 </html>
