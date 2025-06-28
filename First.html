@@ -20,7 +20,9 @@
             .then(data => {
                 document.getElementById('hackatime').innerText = `I have ${data.data.human_readable_total} of coding under my belt`;
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => 
+            console.error('Error:', error),
+            document.getElementById('hackatime').innerText = `Error, please make an error card at <a href="https://github.com/JustACoder-original/Personal_website/issues" target="_blank">the github repo</a> with your browser information`);
     </script>
   </body>
 </html>
